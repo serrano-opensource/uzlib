@@ -26,9 +26,11 @@
 							<builder buildPath="${workspace_loc:/uzlib}/UnitTest" id="cdt.managedbuild.target.gnu.builder.base.1276495824" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" superClass="cdt.managedbuild.target.gnu.builder.base"/>
 							<tool id="cdt.managedbuild.tool.gnu.archiver.base.979650822" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base"/>
 							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.base.1059669610" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.base">
+								<option id="gnu.cpp.compiler.option.dialect.std.142886416" name="Language standard" superClass="gnu.cpp.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.cpp.compiler.dialect.default" valueType="enumerated"/>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.2013250999" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.c.compiler.base.663610117" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.base">
+								<option id="gnu.c.compiler.option.dialect.std.1746046270" name="Language standard" superClass="gnu.c.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.c.compiler.dialect.default" valueType="enumerated"/>
 								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.320279834" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.c.linker.base.1791288677" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.base"/>
@@ -49,6 +51,161 @@
 				</configuration>
 			</storageModule>
 			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="cdt.managedbuild.config.gnu.exe.debug.841568222.353747917.1216593425.1117846205.1089286272.2122928132.838318587.1121383503.660037767">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.gnu.exe.debug.841568222.353747917.1216593425.1117846205.1089286272.2122928132.838318587.1121383503.660037767" moduleId="org.eclipse.cdt.core.settings" name="CortexM33">
+				<macros>
+					<stringListMacro name="PATH" type="VALUE_TEXT_LIST">
+						<value name="/bin"/>
+						<value name="/usr/local/lib"/>
+						<value name="/home/nriedel/.local/bin"/>
+						<value name="/usr/local/sbin"/>
+						<value name="/usr/local/bin"/>
+						<value name="/usr/sbin"/>
+						<value name="/usr/bin"/>
+						<value name="/sbin"/>
+						<value name="/usr/local/nds32be-unknown-elf/bin"/>
+						<value name="/usr/local/games"/>
+						<value name="/snap/bin"/>
+					</stringListMacro>
+				</macros>
+				<externalSettings>
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/uzlib"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/uzlib/CortexM33"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="uzlib" srcPrefixMapping="" srcRootPath=""/>
+					</externalSetting>
+				</externalSettings>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="a" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.staticLib" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.staticLib,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="rm -rf" description="" errorParsers="org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.CWDLocator;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GASErrorParser;org.eclipse.cdt.core.GLDErrorParser" id="cdt.managedbuild.config.gnu.exe.debug.841568222.353747917.1216593425.1117846205.1089286272.2122928132.838318587.1121383503.660037767" name="CortexM33" optionalBuildProperties="org.eclipse.cdt.docker.launcher.containerbuild.property.enablement=null,org.eclipse.cdt.docker.launcher.containerbuild.property.selectedvolumes=,org.eclipse.cdt.docker.launcher.containerbuild.property.volumes=,org.eclipse.cdt.docker.launcher.containerbuild.property.image=null,org.eclipse.cdt.docker.launcher.containerbuild.property.connection=null" parent="cdt.managedbuild.config.gnu.exe.debug" postannouncebuildStep="" postbuildStep="" preannouncebuildStep="" prebuildStep="">
+					<folderInfo id="cdt.managedbuild.config.gnu.exe.debug.841568222.353747917.1216593425.1117846205.1089286272.2122928132.838318587.1121383503.660037767." name="/" resourcePath="">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.cross.base.585570029" name="Cross GCC" superClass="cdt.managedbuild.toolchain.gnu.cross.base">
+							<option id="cdt.managedbuild.option.gnu.cross.prefix.958869076" name="Prefix" superClass="cdt.managedbuild.option.gnu.cross.prefix" useByScannerDiscovery="false" value="/opt/gnuarmemb/bin/arm-none-eabi-" valueType="string"/>
+							<option id="cdt.managedbuild.option.gnu.cross.path.1793298992" name="Path" superClass="cdt.managedbuild.option.gnu.cross.path" useByScannerDiscovery="false" value="" valueType="string"/>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.targetPlatform.gnu.cross.529171186" isAbstract="false" osList="all" superClass="cdt.managedbuild.targetPlatform.gnu.cross"/>
+							<builder buildPath="${workspace_loc:/otdoa}/andes" id="cdt.managedbuild.builder.gnu.cross.1857959592" keepEnvironmentInBuildfile="false" name="Gnu Make Builder" superClass="cdt.managedbuild.builder.gnu.cross"/>
+							<tool id="cdt.managedbuild.tool.gnu.cross.c.compiler.1439423554" name="Cross GCC Compiler" superClass="cdt.managedbuild.tool.gnu.cross.c.compiler">
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.c.compiler.option.include.paths.1494312894" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="../../include"/>
+									<listOptionValue builtIn="false" value="../mini_matrix"/>
+									<listOptionValue builtIn="false" value="../top/include"/>
+									<listOptionValue builtIn="false" value="../rstd/include"/>
+									<listOptionValue builtIn="false" value="../rstd/gram_matrix"/>
+									<listOptionValue builtIn="false" value="../rstd/host"/>
+									<listOptionValue builtIn="false" value="../hp_rstd/include"/>
+									<listOptionValue builtIn="false" value="../loc/include"/>
+									<listOptionValue builtIn="false" value="../sbe/include"/>
+									<listOptionValue builtIn="false" value="../date/include"/>
+									<listOptionValue builtIn="false" value="../../fft/inc"/>
+									<listOptionValue builtIn="false" value="../../fft/cmsis_fft/include"/>
+									<listOptionValue builtIn="false" value="../../fft/cmsis_fft/include/core"/>
+									<listOptionValue builtIn="false" value="../../loc_server/include"/>
+									<listOptionValue builtIn="false" value="../../phywi_inc"/>
+									<listOptionValue builtIn="false" value="$(ZEPHYR_BASE)/include"/>
+									<listOptionValue builtIn="false" value="$(ZEPHYR_BASE)/../nrf/include"/>
+									<listOptionValue builtIn="false" value="$(ZEPHYR_BASE)/../nrfxlib/nrf_modem/include/"/>
+									<listOptionValue builtIn="false" value="$(ZEPHYR_BASE)/../mbedtls/include/"/>
+								</option>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="true" id="gnu.c.compiler.option.preprocessor.def.symbols.1462519788" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols"/>
+								<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.option.optimization.level.995527195" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" useByScannerDiscovery="false" value="gnu.c.optimization.level.size" valueType="enumerated"/>
+								<option defaultValue="gnu.c.debugging.level.max" id="gnu.c.compiler.option.debugging.level.1126714016" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.default" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.dialect.std.536530999" name="Language standard" superClass="gnu.c.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.c.compiler.dialect.c99" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.dialect.flags.83398131" name="Other dialect flags" superClass="gnu.c.compiler.option.dialect.flags" useByScannerDiscovery="true" value="-fno-builtin -fno-omit-frame-pointer -fdata-sections -fno-exceptions -fno-builtin -fgnu89-inline " valueType="string"/>
+								<option id="gnu.c.compiler.option.misc.other.1323250941" name="Other flags" superClass="gnu.c.compiler.option.misc.other" useByScannerDiscovery="false" value="-c -fmessage-length=0 -ffreestanding -fno-common -mcpu=cortex-m33 -mthumb -mabi=aapcs -fno-pie -fno-pic -fno-strict-overflow -fno-reorder-functions -fno-defer-pop -fno-asynchronous-unwind-tables -mfloat-abi=hard" valueType="string"/>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.91806268" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.cross.cpp.compiler.166393894" name="Cross G++ Compiler" superClass="cdt.managedbuild.tool.gnu.cross.cpp.compiler">
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.cpp.compiler.option.include.paths.1186015315" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="../../include"/>
+									<listOptionValue builtIn="false" value="../mini_matrix"/>
+									<listOptionValue builtIn="false" value="../top/include"/>
+									<listOptionValue builtIn="false" value="../rstd/include"/>
+									<listOptionValue builtIn="false" value="../rstd/gram_matrix"/>
+									<listOptionValue builtIn="false" value="../rstd/host"/>
+									<listOptionValue builtIn="false" value="../hp_rstd/include"/>
+									<listOptionValue builtIn="false" value="../loc/include"/>
+									<listOptionValue builtIn="false" value="../sbe/include"/>
+									<listOptionValue builtIn="false" value="../date/include"/>
+									<listOptionValue builtIn="false" value="../../fft/inc"/>
+									<listOptionValue builtIn="false" value="../../fft/cmsis_fft/include"/>
+									<listOptionValue builtIn="false" value="../../fft/cmsis_fft/include/core"/>
+									<listOptionValue builtIn="false" value="../../loc_server/include"/>
+									<listOptionValue builtIn="false" value="../../phywi_inc"/>
+								</option>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="true" id="gnu.cpp.compiler.option.preprocessor.def.1775378503" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" useByScannerDiscovery="false" valueType="definedSymbols"/>
+								<option id="gnu.cpp.compiler.option.optimization.level.1277876158" name="Optimization Level" superClass="gnu.cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
+								<option defaultValue="gnu.cpp.compiler.debugging.level.max" id="gnu.cpp.compiler.option.debugging.level.1461352205" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" useByScannerDiscovery="false" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.dialect.std.1503638330" name="Language standard" superClass="gnu.cpp.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.cpp.compiler.dialect.default" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.other.other.1370800990" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" useByScannerDiscovery="false" value="-c -fmessage-length=0 -ffreestanding -fno-common -mcpu=cortex-m33 -mthumb -mabi=aapcs -fno-pie -fno-pic -fno-strict-overflow -fno-reorder-functions -fno-defer-pop -fno-asynchronous-unwind-tables -mfloat-abi=hard" valueType="string"/>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.106013571" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.cross.c.linker.1423258904" name="Cross GCC Linker" superClass="cdt.managedbuild.tool.gnu.cross.c.linker"/>
+							<tool id="cdt.managedbuild.tool.gnu.cross.cpp.linker.80393561" name="Cross G++ Linker" superClass="cdt.managedbuild.tool.gnu.cross.cpp.linker"/>
+							<tool id="cdt.managedbuild.tool.gnu.cross.archiver.1385454882" name="Cross GCC Archiver" superClass="cdt.managedbuild.tool.gnu.cross.archiver"/>
+							<tool id="cdt.managedbuild.tool.gnu.cross.assembler.493402624" name="Cross GCC Assembler" superClass="cdt.managedbuild.tool.gnu.cross.assembler">
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.both.asm.option.include.paths.144344409" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="../../pxl/pxl_phywi"/>
+									<listOptionValue builtIn="false" value="/usr/local/PXL/include"/>
+									<listOptionValue builtIn="false" value="/usr/local/PXL/include/ecos"/>
+									<listOptionValue builtIn="false" value="/usr/local/PXL/sequans/core"/>
+									<listOptionValue builtIn="false" value="../../phywi_inc"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1036744991" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<folderInfo id="cdt.managedbuild.config.gnu.exe.debug.841568222.353747917.1216593425.1117846205.1089286272.2122928132.838318587.1121383503.660037767.test" name="/" resourcePath="test">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.cross.base.14476509" name="Cross GCC" superClass="cdt.managedbuild.toolchain.gnu.cross.base">
+							<option id="cdt.managedbuild.option.gnu.cross.prefix.2141656178" name="Prefix" superClass="cdt.managedbuild.option.gnu.cross.prefix"/>
+							<option id="cdt.managedbuild.option.gnu.cross.path.398147582" name="Path" superClass="cdt.managedbuild.option.gnu.cross.path"/>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.targetPlatform.gnu.cross.141834966" isAbstract="false" osList="all" superClass="cdt.managedbuild.targetPlatform.gnu.cross"/>
+							<tool id="cdt.managedbuild.tool.gnu.cross.c.compiler.383699734" name="Cross GCC Compiler" superClass="cdt.managedbuild.tool.gnu.cross.c.compiler">
+								<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.option.optimization.level.1371614196" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" value="gnu.c.optimization.level.size" valueType="enumerated"/>
+								<option defaultValue="gnu.c.debugging.level.max" id="gnu.c.compiler.option.debugging.level.431096569" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" value="gnu.c.debugging.level.default" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.dialect.std.465426438" name="Language standard" superClass="gnu.c.compiler.option.dialect.std" value="gnu.c.compiler.dialect.c99" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.dialect.flags.124105134" name="Other dialect flags" superClass="gnu.c.compiler.option.dialect.flags" value="-fno-builtin -fno-omit-frame-pointer -fdata-sections -fno-exceptions -fno-builtin -fgnu89-inline " valueType="string"/>
+								<option id="gnu.c.compiler.option.misc.other.27952729" name="Other flags" superClass="gnu.c.compiler.option.misc.other" value="-c -fmessage-length=0 -ffreestanding -fno-common -mcpu=cortex-m33 -mthumb -mabi=aapcs -fno-pie -fno-pic -fno-strict-overflow -fno-reorder-functions -fno-defer-pop -fno-asynchronous-unwind-tables -mfloat-abi=hard" valueType="string"/>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1045335861" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.cross.cpp.compiler.1506096409" name="Cross G++ Compiler" superClass="cdt.managedbuild.tool.gnu.cross.cpp.compiler">
+								<option id="gnu.cpp.compiler.option.optimization.level.1414463034" name="Optimization Level" superClass="gnu.cpp.compiler.option.optimization.level" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
+								<option defaultValue="gnu.cpp.compiler.debugging.level.max" id="gnu.cpp.compiler.option.debugging.level.221706181" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.dialect.std.1817874573" name="Language standard" superClass="gnu.cpp.compiler.option.dialect.std" value="gnu.cpp.compiler.dialect.default" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.other.other.1097203796" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-c -fmessage-length=0 -ffreestanding -fno-common -mcpu=cortex-m33 -mthumb -mabi=aapcs -fno-pie -fno-pic -fno-strict-overflow -fno-reorder-functions -fno-defer-pop -fno-asynchronous-unwind-tables -mfloat-abi=hard" valueType="string"/>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1075773499" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.cross.c.linker.1269423188" name="Cross GCC Linker" superClass="cdt.managedbuild.tool.gnu.cross.c.linker"/>
+							<tool id="cdt.managedbuild.tool.gnu.cross.cpp.linker.1917567741" name="Cross G++ Linker" superClass="cdt.managedbuild.tool.gnu.cross.cpp.linker"/>
+							<tool id="cdt.managedbuild.tool.gnu.cross.archiver.696582437" name="Cross GCC Archiver" superClass="cdt.managedbuild.tool.gnu.cross.archiver"/>
+							<tool id="cdt.managedbuild.tool.gnu.cross.assembler.856420246" name="Cross GCC Assembler" superClass="cdt.managedbuild.tool.gnu.cross.assembler">
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.both.asm.option.include.paths.557953036" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="../../pxl/pxl_phywi"/>
+									<listOptionValue builtIn="false" value="/usr/local/PXL/include"/>
+									<listOptionValue builtIn="false" value="/usr/local/PXL/include/ecos"/>
+									<listOptionValue builtIn="false" value="/usr/local/PXL/sequans/core"/>
+									<listOptionValue builtIn="false" value="../../phywi_inc"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1308445309" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry excluding="tests|examples|cmsis_fft/src/arm_cfft_radix4_init_q15.c|cmsis_fft/src/arm_cfft_radix2_q15.c|cmsis_fft/src/arm_cfft_radix2_init_q15.c|cmsis_fft/src/arm_rfft_q15.c|cmsis_fft/src/arm_rfft_init_q15.c|cmsis_fft/src/arm_dct4_q15.c|cmsis_fft/src/arm_dct4_init_q15.c|loc/loc_main.cpp|cmsis_fft/src/MatrixFunctions|source|test/loc/loc_calc_toa_windows_test.cpp|test/loc/loc_kf_tests.cpp|test/rstd/fft_index_data.c|cmsis_fft_old|test/mocks/loc/MLI.cpp|test/loc/loc_gmlte_functions_test.cpp|test/loc/loc_gmlte_test.cpp|test/loc/location_server_matlab_test.cpp|rstd/zsp|test|test/loc/loc_ecid_matlab_test.cpp|test/rstd_gtest/fft_index_data.cpp|rstd/gram_matrix|test/rstd/fft_index_data.cpp|top|test/loc/MLI_test.cpp|test/loc/location_server_test.cpp" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="top"/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="ilg.gnumcueclipse.managedbuild.packs"/>
 		</cconfiguration>
 	</storageModule>
 	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
