@@ -12,15 +12,6 @@ C_SRCS += \
 ../src/tinflate.c \
 ../src/tinfzlib.c 
 
-OBJS += \
-./src/adler32.o \
-./src/crc32.o \
-./src/defl_static.o \
-./src/genlz77.o \
-./src/tinfgzip.o \
-./src/tinflate.o \
-./src/tinfzlib.o 
-
 C_DEPS += \
 ./src/adler32.d \
 ./src/crc32.d \
@@ -29,6 +20,15 @@ C_DEPS += \
 ./src/tinfgzip.d \
 ./src/tinflate.d \
 ./src/tinfzlib.d 
+
+OBJS += \
+./src/adler32.o \
+./src/crc32.o \
+./src/defl_static.o \
+./src/genlz77.o \
+./src/tinfgzip.o \
+./src/tinflate.o \
+./src/tinfzlib.o 
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -39,4 +39,11 @@ src/%.o: ../src/%.c src/subdir.mk
 	@echo 'Finished building: $<'
 	@echo ' '
 
+
+clean: clean-src
+
+clean-src:
+	-$(RM) ./src/adler32.d ./src/adler32.o ./src/crc32.d ./src/crc32.o ./src/defl_static.d ./src/defl_static.o ./src/genlz77.d ./src/genlz77.o ./src/tinfgzip.d ./src/tinfgzip.o ./src/tinflate.d ./src/tinflate.o ./src/tinfzlib.d ./src/tinfzlib.o
+
+.PHONY: clean-src
 
