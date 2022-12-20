@@ -55,7 +55,7 @@ main-build: libuzlib.a
 libuzlib.a: $(OBJS) $(USER_OBJS) makefile $(OPTIONAL_TOOL_DEPS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: Cross GCC Archiver'
-	/opt/gnuarmemb/bin/arm-none-eabi-ar -r  "libuzlib.a" $(OBJS) $(USER_OBJS) $(LIBS)
+	arm-zephyr-eabi-ar -r  "libuzlib.a" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 

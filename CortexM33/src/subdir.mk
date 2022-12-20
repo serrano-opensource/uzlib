@@ -35,7 +35,7 @@ OBJS += \
 src/%.o: ../src/%.c src/subdir.mk
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross GCC Compiler'
-	/opt/gnuarmemb/bin/arm-none-eabi-gcc -std=c99 -fno-builtin -fno-omit-frame-pointer -fdata-sections -fno-exceptions -fno-builtin -fgnu89-inline -Os -g -Wall -c -fmessage-length=0 -ffreestanding -fno-common -mcpu=cortex-m33 -mthumb -mabi=aapcs -fno-pie -fno-pic -fno-strict-overflow -fno-reorder-functions -fno-defer-pop -fno-asynchronous-unwind-tables -mfloat-abi=hard -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
+	arm-zephyr-eabi-gcc -std=c99 -fno-builtin -fno-omit-frame-pointer -fdata-sections -fno-exceptions -fno-builtin -fgnu89-inline -Os -g -Wall -c -fmessage-length=0 -ffreestanding -fno-common -mcpu=cortex-m33 -mthumb -mabi=aapcs -fno-pie -fno-pic -fno-strict-overflow -fno-reorder-functions -fno-defer-pop -fno-asynchronous-unwind-tables -mfloat-abi=hard -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
